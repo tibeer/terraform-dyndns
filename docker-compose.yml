@@ -1,0 +1,7 @@
+---
+services:
+  terraform-dyndns:
+    image: ghcr.io/tibeer/terraform-dyndns:latest
+    volumes:
+      - "./jobs:/etc/cron.d"
+      - "./code:/code"

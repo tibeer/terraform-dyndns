@@ -1,0 +1,10 @@
+zone = "foo.com"
+# all below mentioned subdomains get mapped to this dynamic IP, e.g. 1.2.3.4
+subdomains = [
+  "",
+  "bar",
+  "baz"
+]
+# 1.2.3.4 => foo.com
+# 1.2.3.4 => bar.foo.com
+# 1.2.3.4 => bax.foo.com
